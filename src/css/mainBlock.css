@@ -1,0 +1,90 @@
+.mainBlock{
+    width: 80vw;
+    height: 90vh;  
+    display: flex;  
+    justify-content: space-between;
+    margin: auto auto auto auto;    
+    background-size: cover;    
+    border-radius: 25px;
+    opacity: 0;
+    opacity: 1;
+    /* animation: hideBlock 1s ease-in 5s forwards; */
+
+}
+
+@keyframes hideBlock {
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0.5;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.title{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: absolute;
+        top: 3%;
+        left: -43%;
+    /* animation: loadTitle 5s ease-out forwards; */
+}
+
+@keyframes loadTitle {
+    0%{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+    }
+   
+    25%{
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+    88%{
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+   
+    100%{
+        position: absolute;
+        top: 3%;
+        left: -43%;
+    }
+    
+}
+
+.title img{
+    width:50px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.title h1{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+
+
+
+@media screen and (max-width:1024) {
+    
+    .mainBlock{
+        width: 80vw;
+        height: 100vh;          
+    }
+}

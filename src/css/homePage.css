@@ -1,0 +1,136 @@
+.homePage {
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.priceTrend {
+  width: 45%;
+  height: 500px;
+  padding: 10px;
+  margin: 20px;
+  overflow-y: scroll;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: -80%;
+  left: 0%;
+  /* animation: slide1Block 1.5s ease-out 5s forwards; */
+}
+
+@keyframes slide1Block {
+  100% {
+    left: 0%;
+  }
+}
+
+.list-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.list-item:hover {
+  background-color: rgb(4, 141, 111);
+  color: white;
+  cursor: pointer;
+}
+
+.list-item img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.cropName {
+  flex: 30%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.cropName .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cropPrice {
+  flex: 40%;
+  font-size: 14px;
+}
+.cropPrice span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sideBlock {
+  width: 50%;
+  position: absolute;
+  top: 0%;
+  left: 130%;
+  left: 50%;
+  /* animation: slideBlock 1.5s ease-out 5s forwards; */
+}
+
+@keyframes slideBlock {
+  100% {
+    left: 50%;
+  }
+}
+
+.statusChart {
+  width: 90%;
+  height: 300px;
+  background-color: white;
+}
+
+.detailsBlock {
+  background-color: rgb(175, 201, 169);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+
+.statusChart{
+  height: 500px;
+  overflow: scroll;
+}
+
+.statusChart table td{
+  text-align: center;
+}
+
+
+@media screen and (max-width:1024px) {
+    .priceTrend {
+        width: 45%;
+        height: 430px;
+        padding: 5px;
+        margin: 15px;
+    }
+    .cropName{
+        font-size: 12px;
+    }
+    .cropName .name {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      
+    .date{
+        font-size: 12px;
+    }
+
+    .statusChart {
+        width: 90%;
+        height: 480px;
+        background-color: white;
+      }
+
+      
+      
+}

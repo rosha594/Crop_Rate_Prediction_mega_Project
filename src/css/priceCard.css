@@ -1,0 +1,62 @@
+.slider {
+  opacity: 0;
+  /* animation: hideme 3s ease-out 5s forwards; */
+}
+
+@keyframes hideme {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.priceSlider {
+  margin: 50px;
+  overflow-x: auto;
+}
+.cardList {
+  display: flex;
+}
+
+.priceCard {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.crop {
+  display: flex;
+  padding: 10px;
+}
+
+.crop img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .priceCard {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

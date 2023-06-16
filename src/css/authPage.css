@@ -1,0 +1,359 @@
+.authPage {
+  background-image: url("../Assets/farm.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  position: relative;
+}
+
+.authPage2 {
+  background-image: url("../Assets/logbg.jpg");
+}
+.block {
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 85%;
+  background-color: white;
+  border-radius: 25px;
+  margin: 0px auto 0px auto;
+  overflow: hidden;
+}
+
+.login {
+  flex: 50%;
+  text-align: center;
+  color: rgb(3, 105, 83);
+  font-size: 30px;
+}
+.login2 {
+  flex: 40%;
+  text-align: center;
+  opacity: 0;
+}
+
+.login form {
+  /* display: flex; */
+  width: 300px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: auto;
+  margin: 50px auto 0px auto;
+}
+
+.login input {
+  width: 230px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(3, 105, 83);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px auto 0px auto;
+}
+.login button {
+  width: 130px;
+  height: 45px;
+  margin: 10px auto 0px auto;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid rgb(3, 105, 83);
+  background-color: rgb(3, 105, 83);
+  color: white;
+}
+.login button:hover {
+  background-color: white;
+  color: rgb(3, 105, 83);
+}
+.signupLink {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.signupLink button {
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 25px;
+  border: 2px solid rgb(3, 105, 83);
+  background-color: white;
+  color: rgb(3, 105, 83);
+}
+.signupLink button:hover {
+  background-color: rgb(3, 105, 83);
+  color: white;
+}
+
+.signup2 {
+  flex: 60%;
+  height: 500px;
+  text-align: center;
+  color: rgb(245, 170, 10);
+  font-size: 30px;
+}
+
+.signup {
+  flex: 50%;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.signup2 form {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 10px;
+  height: 170px;
+}
+.signup2 input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(245, 170, 10);
+  font-size: 16px;
+  font-weight: 700;
+}
+.signup2 select {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(245, 170, 10);
+  font-size: 14px;
+}
+
+.signup2 button {
+  width: 100px;
+  height: 40px;
+  margin: 20px auto 0px auto;
+  border-radius: 25px;
+  border: 2px solid rgb(245, 170, 10);
+  background-color: rgb(245, 170, 10);
+  color: white;
+}
+.signup2 button:hover {
+  background-color: white;
+  color: rgb(3, 105, 83);
+}
+
+.loginImg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(3, 105, 83);
+  transform: translate(100%);
+  transition: 0.5s;
+}
+.loginImgda img {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  height: 50%;
+}
+.loginImgda .loc {
+  width: 55%;
+  height: 40%;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+.loginImgda h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.loginImgda h3 {
+  text-align: center;
+  color: white;
+  width: 300px;
+  font-size: 25px;
+  margin: 140px auto 0px auto;
+}
+
+.singupImg {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background-color: rgb(245, 170, 10);
+  transform: translate(0%);
+  transition: 0.5s;
+  left: 0%;
+}
+
+.singupImgda img {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  height: 50%;
+}
+.singupImgda .loc {
+  width: 55%;
+  height: 37%;
+  position: absolute;
+  top: 7%;
+  left: 25%;
+}
+.singupImgda h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.singupImgda h3 {
+  text-align: center;
+  color: white;
+  width: 250px;
+  font-size: 25px;
+  margin: 140px auto 0px auto;
+}
+
+/* UserProfile */
+.userProfile {
+  text-align: center;
+}
+.userProfile form {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 20px;
+  height: 170px;
+  margin-top: 20px;
+}
+.userProfile input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(3, 105, 83);
+  font-size: 16px;
+  font-weight: 700;
+}
+.userProfile select {
+  width: 270px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(3, 105, 83);
+  font-size: 14px;
+}
+
+.userProfile button {
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  margin: 60px auto 0px auto;
+  border-radius: 25px;
+  border: 2px solid rgb(3, 105, 83);
+  background-color: rgb(3, 105, 83);
+  color: white;
+}
+.userProfile button:hover {
+  background-color: white;
+  color: rgb(3, 105, 83);
+}
+
+.farmer img {
+  width: 100px;
+  border-radius: 50%;
+}
+.farmer .farmerName {
+  line-height: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .login,.login2 h2{
+    font-size: 20px;
+  }
+
+  .login button {
+    width: 120px;
+    height: 40px;
+  }
+
+  .signup,.signup2 h2{
+    font-size: 25px;
+  }
+  
+  .signupLink button {
+    width: 70px;
+    height: 30px;
+  }
+    .login input {
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+  }
+
+  .loginImgda img {
+    height: 40%;
+  }
+
+  .loginImgda h3 {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .singupImgda h2{
+    font-size: 25px;
+  }
+  .singupImgda h3{
+    width: 90%;
+    font-size: 20px;
+  }
+  .singupImgda img {
+    position: absolute;
+    bottom: -10%;
+    width: 100%;
+    height: 50%;
+  }
+
+
+  .signup2 form {
+    margin-top: 60px;
+    gap: 15px;
+    
+  }
+
+  .signup2 input {
+   
+    width: 120px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(245, 170, 10);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .signup2 select {
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(245, 170, 10);
+    font-size: 14px;
+  }
+  
+  .signup2 button {
+    width: 100px;
+    height: 40px;
+    margin: 20px auto 0px auto;
+    border-radius: 25px;
+    border: 2px solid rgb(245, 170, 10);
+    background-color: rgb(245, 170, 10);
+    color: white;
+  }
+}

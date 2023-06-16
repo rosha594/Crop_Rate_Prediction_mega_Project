@@ -1,0 +1,212 @@
+.userArea {
+  width: 22%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userBlock {
+  width: 100%;
+  height: 35%;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Login btn */
+.auth-Block {
+  margin: 0px;
+}
+.auth-Block img {
+  position: absolute;
+  top: 33%;
+  left: 0%;
+  width: 230px;
+}
+
+.loginBtn {
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(4, 141, 111);
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 2px solid rgb(255, 255, 255);
+}
+.loginBtn:hover {
+  background-color: white;
+  color: rgb(4, 141, 111);
+  border: 2px solid rgb(4, 141, 111);
+}
+
+/* User BLock Left side */
+.userProfileBlock {
+  margin: 10px;
+}
+.userProfileBlock img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user .userName {
+  line-height: 0.5;
+  
+}
+.user .userName {
+  line-height: 0.5;
+  
+}
+
+.userProfileBlock .btn1:hover {
+  text-decoration: none;
+  color: rgb(4, 141, 111);
+}
+
+/* Gainer and losser crop */
+.priceStatusBlock {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(175, 201, 169);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 20px;
+}
+
+.topGainers {
+  margin-top: -20px;
+  border-bottom: 1px solid green;
+}
+.topLossers {
+  margin-top: -18px;
+}
+.gainersList {
+  margin-top: -10px;
+  width: 100%;
+  height: 100px;
+  overflow-y: scroll;
+}
+.lossersList {
+  margin-top: -10px;
+  width: 100%;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.tableHead {
+  margin-top: -30px;
+}
+table {
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+tr:hover {
+  background-color: rgb(4, 141, 111);
+  color: white;
+}
+tr:hover th {
+  color: black;
+}
+th {
+  font-size: 12px;
+  border-bottom: 2px solid green;
+  position: sticky;
+  top: 0%;
+  background-color: rgba(255, 255, 255, 1);
+}
+td {
+  position: relative;
+}
+.gainerImg::after {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid green;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: 0%;
+}
+.losserImg::after {
+  border-top: 10px solid red;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 0%;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Login Btn */
+  .auth-Block img {
+    width: 200px;
+  }
+
+  .loginBtn {
+    margin: 10px;
+    width: 80px;
+    height: 40px;
+  }
+
+  /* Price Status */
+  .priceStatusBlock {
+    overflow: hidden;
+  }
+
+  .topGainers {
+    height: 50%;
+
+    font-size: 15px;
+  }
+  .topLossers {
+    height: 50%;
+
+    font-size: 15px;
+  }
+
+  .gainersList {
+    height: 80px;
+  }
+  .lossersList {
+    height: 80px;
+  }
+
+  th {
+    font-size: 10px;
+  }
+
+  table {
+    border-spacing: 0 10px;
+  }
+
+  td {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,94 @@
+.myCropPage {
+  overflow: hidden;
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+
+.mcrFG{
+  width: 50%;
+  height: 28%;
+  position: absolute;
+  bottom: 13%;
+  left: 0;
+}
+.myCropPage h2 {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.firstPage {
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.firstPage .selectedCrop {
+  position: absolute;
+  top: 68%;
+  left: 40%;
+}
+
+.firstPage button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid rgb(4, 141, 111);
+  border-radius: 25px;
+  background-color: rgb(4, 141, 111);
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  top: 65%;
+  right: 3%;
+}
+
+.firstPage button:hover {
+  border: 2px solid rgb(4, 141, 111);
+  border-radius: 25px;
+  background-color: white;
+  color: rgb(4, 141, 111);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.secondPage h5{
+margin-top: -20px;
+}
+.secondPage .listitem{
+margin-top: -20px;
+}
+.secondPage .result-box{
+  margin:30px;
+margin-top: 0px;
+overflow-y: scroll;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .mcrFG{
+    width: 40%;
+    
+    
+    bottom: 20%;
+    
+  }
+
+  .firstPage .selectedCrop {
+    
+    top: 63%;
+    
+  }
+
+  .firstPage button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid rgb(4, 141, 111);
+    border-radius: 25px;
+    background-color: rgb(4, 141, 111);
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    top:60%;
+    right: 3%;
+  }
+  
+}

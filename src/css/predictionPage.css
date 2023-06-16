@@ -1,0 +1,273 @@
+#crop-type {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+.prediactionPage {
+  padding: 10px;
+  position: relative;
+}
+.prediactionPage h2 {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.cropList {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px 0px inset;
+  margin: auto auto auto auto;
+  gap: 0px;
+  overflow-y: scroll;
+  height: 350px;
+  border-bottom: 2px solid rgba(4, 141, 111, 0.3);
+  align-items: center;
+}
+
+.cropList .listitem,
+.secondPage .listitem {
+  width: 100px;
+  height: 80px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 010px auto;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.secondPage .listitem {
+  background-color: rgb(4, 141, 111);
+  color: white;
+}
+
+.cropList .listitem .crpImg img,
+.secondPage .listitem .crpImg img {
+  width: 30px;
+}
+
+.cropList .listitem:hover {
+  background-color: rgb(4, 141, 111);
+  color: white;
+  cursor: pointer;
+}
+
+.blockPre {
+  display: flex;
+}
+
+.blockPre img {
+  width: 43%;
+  height: 43%;
+  position: absolute;
+  left: 0;
+  bottom: -40%;
+}
+
+/* dropdown */
+.blockPre form {
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+}
+.formInputs {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+
+.formInputs input {
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgb(4, 141, 111);
+  font-size: 16px;
+  font-weight: 700;
+}
+.formInputs select {
+  width: 160px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgb(4, 141, 111);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.formInputs button,
+.secondPage button {
+  width: 150px;
+  height: 40px;
+  margin-left: 0px;
+  border: 2px solid rgb(4, 141, 111);
+  border-radius: 25px;
+  background-color: rgb(4, 141, 111);
+  color: white;
+  font-weight: 400;
+}
+.formInputs button:hover,
+.secondPage button:hover {
+  border: 2px solid rgb(4, 141, 111);
+  border-radius: 25px;
+  background-color: white;
+  color: rgb(4, 141, 111);
+  font-weight: 400;
+  cursor: pointer;
+}
+.selectedCrop {
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -10%;
+  left: 30%;
+}
+
+/* reslut */
+.cropPriceResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  height: 450px;
+}
+
+.cropPriceResult table {
+  background-color: rgb(175, 201, 169);
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.cropPriceResult table td {
+  
+  padding: 20px;
+}
+.cropPriceResult table th {
+  padding: 20px;
+  font-size: 20px;
+  background-color: white;
+}
+
+.cropPriceResult table tr:hover {
+  background-color: rgb(4, 141, 111);
+  color: white;
+  border-radius: 25px;
+}
+.cropPriceResult table tr:hover th {
+  color: black;
+}
+
+/* Second Page */
+.secondPage {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondPage .inputBlock {
+  width: 500px;
+  margin: 10px auto 0px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+.secondPage .inputBlock input {
+  margin-left: 20px;
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(3, 105, 83);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.secondPage button {
+  margin: 40px;
+}
+
+.redbtn,
+.greenbtn,
+.yellowbtn {
+  width: 200px !important;
+  height: 50px !important;
+  margin: 10px !important;
+}
+
+.redbtn {
+  background-color: red !important;
+}
+
+.greenbtn {
+  background-color: rgb(3, 105, 83) !important;
+}
+
+.yellowbtn {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .cropList {
+    grid-template-columns: auto auto auto auto;
+
+    height: 300px;
+  }
+
+  .formInputs input {
+    width: 110px;
+    height: 20px;
+    
+  }
+
+  .formInputs select {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .formInputs button,
+.secondPage button {
+  width: 120px;
+  height: 35px;
+  margin-left: 0px;
+ 
+}
+
+.selectedCrop {
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -15%;
+  left: 30%;
+}
+
+.cropPriceResult table td {
+  padding: 15px;
+}
+
+.secondPage .inputBlock input {
+  
+  width: 150px;
+  
+}
+.secondPage button {
+  margin: 40px auto 0px auto;
+}
+
+}

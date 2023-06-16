@@ -1,0 +1,8 @@
+.mainArea{
+   width: 75%;
+   background-color: white;
+   border-radius: 25px;
+   z-index: 10;
+   overflow: hidden;
+}
+

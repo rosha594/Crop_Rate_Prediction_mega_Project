@@ -1,0 +1,31 @@
+.landing_page {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  background-color: rgb(175, 201, 169);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(5, 155, 38, 0.5),
+      rgba(5, 155, 38, 0.5)
+    ),
+    url("../../public/images/farm1.jpg");
+  background-size: cover;
+  /* animation: loading 5s ease-out 10s forwards; */
+}
+
+@keyframes loading {
+  to {
+    filter: blur(10px);
+    border: none;
+  }
+}

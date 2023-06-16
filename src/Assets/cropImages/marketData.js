@@ -1,0 +1,5 @@
+const marketData = [
+    {}
+]
+
+export {marketData}
